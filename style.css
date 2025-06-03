@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    gap: 20px; /* Spaziatura uniforme tra titolo e bottone */
+}
+
+/* CORRETTO: usa h1 senza punto */
+h1 {
+    font-family: 'Helvetica', 'Lucida Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stile per il bottone se ne hai uno */
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #333;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.grid-row {
+    display: flex;
+    flex: 1;
+}
+
+.grid-square {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    aspect-ratio: 1;
+    transition: background-color 0.2s ease;
+}
+
+.grid-square:hover {
+    background-color: #333;
+}
